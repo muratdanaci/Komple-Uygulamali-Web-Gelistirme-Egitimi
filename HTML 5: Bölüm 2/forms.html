@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/html/html_forms.asp -->
+
+    <form action="register.php">
+      <div>
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" />
+      </div>
+      <div>
+        <label for="surname">Soyadınız:</label>
+        <input type="text" id="surname" />
+      </div>
+      <div>
+        <label for="sifre">Şifre:</label>
+        <input type="password" id="sifre" />
+      </div>
+
+      <div>
+        <p>En sevdiğin programlama dili</p>
+        <input type="radio" id="html" name="programlama" />
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="programlama" />
+        <label for="css">CSS</label>
+        <input type="radio" id="js" name="programlama" />
+        <label for="js">JavaScript</label>
+      </div>
+      <br />
+      <div>
+        <label for="intro">Kendini Tanıt</label>
+        <textarea id="intro" cols="20" rows="3"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="birthday">Doğum Gününüz:</label>
+        <input type="date" id="birthday" name="birthday" />
+      </div>
+      <div>
+        <p>En sevdiğin programlama dili</p>
+        <input type="checkbox" id="html1" />
+        <label for="html1">HTML</label>
+        <input type="checkbox" id="css1" />
+        <label for="css1">CSS</label>
+        <input type="checkbox" id="Javascript" />
+        <label for="Javascript">JavaScript</label>
+      </div>
+      <br />
+      <div>
+        <label id="cities">Şehirler</label>
+        <select id="cities">
+          <option value="41">Kocaeli</option>
+          <option value="34">İstanbul</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="eposta">E-mail:</label>
+        <input type="email" id="eposta" />
+      </div>
+      <br />
+      <div>
+        <label for="cv">Cv'nizi Ekleyin:</label>
+        <input type="file" name="cv" id="cv" />
+      </div>
+      <br />
+      <button type="submit">Kaydet</button>
+      <button type="reset">Temizle</button>
+    </form>
+  </body>
+</html>
