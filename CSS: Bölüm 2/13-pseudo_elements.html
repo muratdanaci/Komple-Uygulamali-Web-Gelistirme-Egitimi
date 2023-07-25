@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <style>
+      p::first-line {
+        font-weight: bold;
+        color: brown;
+        word-spacing: 10px;
+        letter-spacing: 5px;
+      }
+      p.about::first-line {
+        /* bosluk olmamasi onemli */
+        color: yellowgreen;
+      }
+
+      p::first-letter {
+        font-size: 48px;
+      }
+
+      ::selection {
+        background-color: aqua;
+      }
+
+      p::after {
+        content: "\1F981";
+        font-size: 40px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Pseudo Classes  -->
+
+    <!-- Pseudo Elements -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit inventore at
+      quas quidem quam vitae. Esse voluptatum a, dolores aut beatae doloremque,
+      blanditiis quos optio ipsa vero unde natus atque?
+    </p>
+    <p class="about">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, nostrum
+      culpa libero, deserunt doloribus nisi molestias et voluptatibus doloremque
+      quo ducimus nam, architecto corrupti atque. Quidem molestias commodi iste.
+      Repudiandae.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .header {
+        background-color: #fc997c;
+      }
+      .nav {
+        padding: 8px 16px;
+        display: inline-block;
+        width: calc(100% - 108.5px);
+        text-align: right;
+      }
+      .nav-logo {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 21px;
+      }
+      .nav-ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .nav-ul__item {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .nav-ul__item a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      #showcase {
+        background-color: #2e4c6d;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+      }
+      footer {
+        background-color: #fc997c;
+        padding: 30px;
+      }
+      .nav-ul__item::before {
+        content: "\21AA";
+        color: #fff;
+      }
+      .nav-ul__item a:hover,
+      .nav-ul__item:hover::before {
+        color: #2e4c6d;
+      }
+      .nav-ul__item a:active,
+      .nav-ul__item:active::before {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="nav-logo">MovieApp</a>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li class="nav-ul__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-ul__item">
+            <a href="#">Movies</a>
+          </li>
+          <li class="nav-ul__item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="showcase">
+        <h1>Welcome to Movie App</h1>
+      </section>
+      <footer></footer>
+    </main>
+  </body>
+</html>
