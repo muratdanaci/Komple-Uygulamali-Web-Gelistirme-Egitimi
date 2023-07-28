@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      article {
+        height: 300px;
+      }
+      .header {
+        background-color: #fc997c;
+      }
+      .nav {
+        padding: 8px 16px;
+        display: inline-block;
+        width: calc(100% - 108.5px);
+        text-align: right;
+      }
+      .nav-logo {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 21px;
+      }
+      .nav-ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .nav-ul__item {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      .nav-ul__item a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .nav-ul__item--login a {
+        color: #fff;
+        background-color: #2e4c6d;
+        padding: 4px 16px;
+        border: 2px solid #fff;
+        border-radius: 8px;
+      }
+
+      #showcase {
+        background-image: url("/CSS:\ Bölüm\ 2/home-bg.jpeg");
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        padding: 10px;
+      }
+      #how-it-works {
+        background-color: #fff;
+        padding: 10px;
+      }
+      .nav-ul__item::before {
+        content: "\21AA";
+        color: #fff;
+      }
+      .nav-ul__item--login::before {
+        content: none;
+      }
+      .nav-ul__item a:hover,
+      .nav-ul__item:hover::before {
+        color: #2e4c6d;
+      }
+      .nav-ul__item--login a:hover {
+        color: #2e4c6d;
+        background-color: #fff;
+        border: 2px solid #2e4c6d;
+      }
+      .nav-ul__item a:active,
+      .nav-ul__item:active::before {
+        color: #fff;
+      }
+
+      .blue-header {
+        text-align: center;
+        color: #3e4555;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .bottom-text {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #3e4555;
+        font-size: 12px;
+      }
+      .table-style {
+        border-spacing: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="nav-logo">MovieApp</a>
+      <nav class="nav">
+        <ul class="nav-ul">
+          <li class="nav-ul__item">
+            <a href="#">Filmler</a>
+          </li>
+          <li class="nav-ul__item">
+            <a href="#">Diziler</a>
+          </li>
+          <li class="nav-ul__item nav-ul__item--login">
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="showcase">
+        <h1>Welcome to Movie App</h1>
+      </section>
+      <article>
+        <section id="how-it-works">
+          <h2 class="blue-header">How it works?</h2>
+          <p class="bottom-text">
+            We will show you step by step how to start watching your favourite
+            movies & tv shows starting now!
+          </p>
+        </section>
+
+        <table class="table-style">
+          <thead>
+            <tr>
+              <th class="blue-header">Register</th>
+              <th class="blue-header">Choose a Plan</th>
+              <th class="blue-header">Enjoy Movify</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="bottom-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                vero obcaecati, nesciunt repudiandae quod expedita.
+              </td>
+              <td class="bottom-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+                inventore amet doloribus architecto libero ullam.
+              </td>
+              <td class="bottom-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                velit ex vero quis eos cupiditate?
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
+  </body>
+</html>
