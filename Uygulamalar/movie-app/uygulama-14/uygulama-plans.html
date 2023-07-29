@@ -183,7 +183,13 @@
 
       .col-4 {
         display: inline-block;
-        width: calc(33%);
+        width: 33%;
+        border-radius: 20px;
+      }
+
+      .row2 {
+        padding: 0px 60px 10px 60px;
+        margin: 0px;
       }
 
       .choose {
@@ -191,6 +197,11 @@
         margin: 2px;
       }
 
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -267,9 +278,9 @@
       </section>
 
       <section id="premium">
-        <div class="align_center"><h3>Become a Premium Member</h3></div>
-        <div class="row2">
-          <div class="col-4 pre1 align_center bg_gray">
+        <h2 class="align_center">Become a Premium Member</h2>
+        <div class="row2 clearfix">
+          <div class="col-4 align_center bg_gray">
             <div class="choose">
               <h2>Free</h2>
               <h3>0/Month</h3>
@@ -285,7 +296,7 @@
             </div>
           </div>
 
-          <div class="col-4 pre2 align_center bg_gray">
+          <div class="col-4 align_center bg_gray">
             <div class="choose">
               <h2>Basic</h2>
               <h3>$9.99/month</h3>
@@ -301,7 +312,7 @@
             </div>
           </div>
 
-          <div class="col-4 pre3 align_center bg_gray">
+          <div class="col-4 align_center bg_gray">
             <div class="choose">
               <h2>Premium</h2>
               <h3>$19.99/month</h3>
