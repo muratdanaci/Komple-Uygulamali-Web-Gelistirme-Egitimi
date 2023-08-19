@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Welcome to MovieApp</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body id="body">
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#">Films</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">TV Shows</a>
+            </li>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="btn btn-secondary" href="#">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="signup-page">
+      <h1 class="signup-title">Creat Your Account</h1>
+
+      <form action="" class="signup-form">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" placeholder="Enter Your First Name" />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" placeholder="Enter Your Last Name" />
+
+        <label for="email">Email:</label>
+        <input type="email" name="" id="email" placeholder="Enter Your Email" />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name=""
+          id="password"
+          placeholder="Enter Your Password"
+        />
+
+        <label for="gender">Gender:</label>
+        <select name="" id="gender">
+          <option value="select" id="select" disabled selected hidden>
+            Select
+          </option>
+          <option value="man">Man</option>
+          <option value="woman">Woman</option>
+        </select>
+
+        <input type="checkbox" name="" id="agree-terms" />
+        <label for="agree-terms"
+          >Agree to
+          <a href="#" target="_blank">Terms &amp; Conditions</a></label
+        >
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="links">
+          <div>
+            <a href="#">About</a>
+          </div>
+          <div>
+            <a href="#">Blog</a>
+          </div>
+          <div>
+            <a href="#">Forum</a>
+          </div>
+          <div>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <div id="social-media">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
+  </body>
+</html>
