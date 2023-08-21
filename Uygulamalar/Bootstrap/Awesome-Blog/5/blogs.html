@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+	integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+	<title>Awesome Blog</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<i class="fa-solid fa-house"></i>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+				<div id="mobile" class="collapse navbar-collapse">
+					<ul class="navbar-nav me-auto"> <!-- me linkleri sola getirdi -->
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="blogs.html" class="nav-link active">Blogs</a>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link">Contact</a>
+						</li>
+					</ul>
+					<!-- <div class="row g-1">
+						<div class="col-8">
+							<input type="text" class="form-control">
+						</div> -->
+						<form class="d-flex">
+							<input type="text" class="form-control me-1" placeholder="Search">
+							<!-- <div class="col-4"> -->
+								<button class="btn btn-warning">
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</button>
+							<!-- </div> -->
+						</form>
+					<!-- </div> -->
+				</div>
+		</div>
+	</nav>
+
+	<main>
+		<div class="container my-4">
+			<div class="row">
+				<div class="col-md-3 d-none d-md-block"> <!-- order-2 order-md-1 -->
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-action">Category 1</a>
+						<a href="#" class="list-group-item list-group-item-action">Category 2</a>
+						<a href="#" class="list-group-item list-group-item-action">Category 3</a>
+						<a href="#" class="list-group-item list-group-item-action">Category 4</a>
+					</div>
+				</div>
+				<div class="col-md-9"> <!-- order-1 order-md-2 -->
+					<!-- https://getbootstrap.com/docs/5.3/components/breadcrumb/ -->
+					<nav>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							<li class="breadcrumb-item active">Blogs</li>
+							<li class="breadcrumb-item"><a href="#">Contact</a></li>
+						</ol>
+					</nav>
+					<div class="card mb-2 shadow">
+						<div class="row">
+							<div class="col-4">
+								<img src="Img/1.jpeg" alt="" class="img-fluid rounded-start">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Card Title</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, mollitia. Neque, accusamus mollitia laboriosam sit consequatur voluptas consectetur in deleniti?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-2 shadow">
+						<div class="row">
+							<div class="col-4">
+								<img src="Img/2.jpeg" alt="" class="img-fluid rounded-start">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Card Title</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolor enim quo sed eveniet, dolorem omnis necessitatibus autem explicabo molestiae?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-2 shadow">
+						<div class="row">
+							<div class="col-4">
+								<img src="Img/3.jpeg" alt="" class="img-fluid rounded-start">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Card Title</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur facere aut saepe, at necessitatibus labore inventore sint modi vel sit.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card mb-2 shadow">
+						<div class="row">
+							<div class="col-4">
+								<img src="Img/4.jpeg" alt="" class="img-fluid rounded-start">
+							</div>
+							<div class="col-8">
+								<div class="card-body">
+									<h5 class="card-title">Card Title</h5>
+									<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae voluptatibus itaque corporis ut fuga iusto suscipit est amet incidunt placeat.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="mt-5 mb-2 pe-4"> <!-- https://getbootstrap.com/docs/5.3/components/pagination/ -->
+						<ul class="pagination justify-content-sm-end">
+							<li class="page-item disabled">
+								<a href="#" class="page-link">Previous</a>
+							</li>
+							<li class="page-item">
+								<a href="#" class="page-link">1</a>
+							</li>
+							<li class="page-item">
+								<a href="#" class="page-link">2</a>
+							</li>
+							<li class="page-item">
+								<a href="#" class="page-link">3</a>
+							</li>
+							<li class="page-item">
+								<a href="#" class="page-link">Next</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer class="py-5 bg-dark text-white">
+		<div class="container text-center">
+			<span>All Rights Reserved. @2025</span>
+		</div>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
