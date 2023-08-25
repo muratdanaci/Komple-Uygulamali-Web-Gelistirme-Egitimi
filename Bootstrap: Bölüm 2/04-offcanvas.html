@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<title>Document</title>
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-md navbar-light bg-danger">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				Offcanvas
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+				<div id="mobile" class="offcanvas offcanvas-end">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title">Header</h5>
+						<button type="button" class="btn btn-primary btn-close" data-bs-dismiss="offcanvas"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav me-auto"> <!-- me linkleri sola getirdi -->
+							<li class="nav-item">
+								<a href="index.html" class="nav-link active">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="blogs.html" class="nav-link">Blogs</a>
+							</li>
+							<li class="nav-item">
+								<a href="contact.html" class="nav-link">Contact</a>
+							</li>
+						</ul>
+						<!-- <div class="row g-1">
+							<div class="col-8">
+								<input type="text" class="form-control">
+							</div> -->
+							<form class="d-flex">
+								<input type="text" class="form-control me-1" placeholder="Search">
+								<!-- <div class="col-4"> -->
+									<button class="btn btn-warning">
+										Ara
+									</button>
+								<!-- </div> -->
+							</form>
+						<!-- </div> -->
+					</div>
+				</div>
+		</div>
+	</nav>
+
+
+	<!-- https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
+	<div class="container my-5">
+		<button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#myOffcanvas">Open</button>
+		<div class="offcanvas offcanvas-end" id="myOffcanvas" data-bs-backdrop="false"> <!-- offcanvas-start, offcanvas-top, offcanvas-bottom ----- backdrop= arka plan rengini kapatir -->
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title">Lorem, ipsum.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+			</div>
+			<div class="offcanvas-body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sed et aliquam consequuntur natus! Voluptatem cumque temporibus quia eos voluptas?</p>
+				<ul class="list-group">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+					<li class="list-group-item">A fourth item</li>
+					<li class="list-group-item">And a fifth one</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
