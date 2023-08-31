@@ -1,0 +1,12 @@
+npm init --yes --> npm i node-sass (İstenilen sürümü indirmek için: npm i node-sass@9.8.1) --> node_modules klasörünü silmek isteyip tekrar indirmek istediğimizde: npm install
+
+not found hatası: MacOS için: "sudo npm install -g node-sass" komutuyla çözdüm.
+
+
+"scripts": Scripti çalıştırdığımızda Sass klasörü içerisindeki scss kodlarını otomatik olarak Css klasörünün içerisine taşıyacak.
+
+"sass": "node-sass -w Sass -o Css" --> "sass --watch sass/styles.sass:css/styles.css"
+
+
+
+Scripti çalıştırmak için: npm run (script-ismi)
