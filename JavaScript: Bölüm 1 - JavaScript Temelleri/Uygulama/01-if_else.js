@@ -128,14 +128,14 @@ else {
 */
 
 // c- Finalden 70 alındığında ortalama 50' nin altında olsa bile dersten geçilsin.
-let vize1 = 20;
-let vize2 = 30;
-let final = 70;
+let vize1 = 50;
+let vize2 = 60;
+let final = 60;
 
 let ortalama = vize1 * 0.2 + vize2 * 0.2 + final * 0.6;
 
-if ((ortalama >= 50 && final >= 50) || (ortalama <= 50 && final >= 70)) {
-  console.log("Geçti!");
+if (ortalama >= 50 || final >= 70) {
+  console.log("Ortalamanız: " + ortalama + " Geçti!");
 } else {
   console.log("Kaldı!");
 }
