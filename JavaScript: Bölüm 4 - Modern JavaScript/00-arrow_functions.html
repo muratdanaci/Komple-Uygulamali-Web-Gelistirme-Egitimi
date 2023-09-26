@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ES5
+
+      // function selamlama() {
+      // 	console.log("Merhaba");
+      // }
+
+      var selamlama = function (isim) {
+        console.log("Merhaba " + isim);
+      };
+      selamlamaES5("Murat");
+
+      // ES6 - Arrow Function
+
+      // const selamlamaES6 = () => console.log("Merhaba");
+
+      const selamlamaES6 = (isim) => {
+        console.log("Merhaba " + isim);
+      };
+      selamlamaES6("Beste");
+
+      // ES5
+      function toplama(a, b) {
+        return a + b;
+      }
+
+      var sonuc;
+      sonuc = toplama(10, 20);
+      console.log(sonuc);
+
+      // ES6
+
+      const toplama = (a, b) => a + b;
+      const toplama = (a, b) => {
+        return a + b;
+      };
+
+      sonuc = toplama(30, 40);
+      console.log(sonuc);
+    </script>
+  </body>
+</html>
