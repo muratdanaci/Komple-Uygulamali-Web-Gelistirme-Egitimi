@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// https://www.w3schools.com/js/js_class_inheritance.asp
+
+		// Kisi => k1, k2
+		// Ogrenci = o1, o2;
+		// Ogretmen
+
+		// parent
+		class Kisi {
+			constructor(ad, dogumYili) {
+				this.ad = ad;
+				this.dogumYili = dogumYili;
+			}
+			yasHesapla() {
+				let tarih = new Date().getFullYear();
+				return tarih - this._dogumYili;
+			}
+			kendiniTanit() {
+				return `Benim adım ${this.ad}.`;
+			}
+		}
+
+		// child
+		class Ogrenci extends Kisi {
+			constructor(ad, dogumYili, okulNumarasi) {
+				super(ad, dogumYili);
+				this.okulNumarasi = okulNumarasi;
+			}
+
+			dersCalis() {
+				return `${this.ad} ders çalışıyor.`;
+			}
+			kendiniTanit() {
+				return `Benim adım ${this.ad} ve okul numaram ${this.okulNumarasi}.`;
+			}
+		}
+
+		class Ogretmen extends Kisi {
+			constructor(ad, dogumYili, brans) {
+				super(ad, dogumYili);
+				this.brans = brans;
+			}
+			dersAnlat() {
+				return `Ben ${this.ad} ve ${this.brans} dersi anlatıyorum.`;
+			}
+			kendiniTanit() {
+				return `Benim adım ${this.ad} ve branşım ${this.brans}.`;
+			}
+		}
+
+		let kisi = new Kisi("Murat", 1997);
+		let ogrenci = new Ogrenci("Ahmet", 2002, 123);
+		let ogretmen = new Ogretmen("Selma", 1960, "Matematik");
+
+		// console.log(kisi.yasHesapla());
+		// console.log(ogrenci.yasHesapla());
+		// console.log(ogrenci.dersCalis());
+		// console.log(ogretmen.dersAnlat());
+
+		console.log(kisi.kendiniTanit());
+		console.log(ogrenci.kendiniTanit());
+		console.log(ogretmen.kendiniTanit());
+
+	</script>
+</body>
+</html>

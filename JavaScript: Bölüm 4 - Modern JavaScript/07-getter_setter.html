@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// https://www.w3schools.com/js/js_object_accessors.asp
+
+		// class
+		class Kisi {
+			constructor(ad, meslek, dogumYili){
+				this.ad = ad;
+				this.meslek = meslek;
+				this.dogumYili = dogumYili;
+			}
+
+			yasHesapla() {
+				let tarih = new Date().getFullYear();
+				return tarih - this.dogumYili;
+			}
+
+			get ad() {
+				return this._ad;
+			}
+			set ad(value) {
+				if (value.length < 3) {
+					console.log("Adınız en az 3 karakter olmalıdır.");
+					return;
+				}
+				this._ad = value;
+			}
+
+			get dogumYili() {
+				return this._dogumYili;
+			}
+			set dogumYili(value) {
+				if (value < 1900 || value > new Date().getFullYear()) {
+					console.log("Doğum yılı 1900'dan büyük ve şimdiki yıldan küçük olmalıdır.");
+					return;
+				}
+				this._dogumYili = value;
+			}
+		}
+
+		let kisi1 = new Kisi("Yıldız", "Ev Hanımı", 1964);
+		console.log(kisi1);
+		console.log(kisi1.ad);
+		
+	</script>
+</body>
+</html>
