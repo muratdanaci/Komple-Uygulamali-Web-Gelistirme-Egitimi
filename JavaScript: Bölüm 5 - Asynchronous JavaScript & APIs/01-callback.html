@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		// https://www.w3schools.com/js/js_callback.asp
+
+		// login => username
+		// posts
+		// create post
+
+		// siparis -> siparisin hazirlanmasi
+
+		console.log("Start");
+
+		const login = (username, password, callback) => {
+			setTimeout(() => {
+				callback( { username: username, email: "info@muratdanaci.com" } );
+			}, 1000);
+		}
+
+		const getPostByUserName = (username, callback) => {
+			setTimeout(() => {
+				callback(["post 1", "post 2", "post 3"]);
+			}, 2000);
+		}
+
+		const getPostDetails = (posts, callback) => {
+			setTimeout(() => {
+				callback ("Post Details");
+			}, 1000);
+		}
+
+		// callback hell
+		login("muratdanaci", "123", user => {
+			console.log(user.username);
+			console.log(user.email);
+
+			getPostByUserName(user.username, (posts) => {
+				console.log(posts);
+				getPostDetails(posts[0], (details) => {
+					console.log(details);
+				})
+			});
+		});
+
+		console.log("End");
+		
+		
+	</script>
+</body>
+</html>
