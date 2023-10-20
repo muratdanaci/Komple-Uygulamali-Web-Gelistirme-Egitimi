@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// console.log("Start");
+
+		// const serverStatus = false;
+		// const login = (username, password, successFn, errorFn) => {
+		// 	if (serverStatus) {
+		// 		setTimeout(() => {
+		// 			successFn( { username: username, email: "info@muratdanaci.com" } );
+		// 		}, 1000);
+		// 	} else {
+		// 		console.log("Server is down!");
+		// 	}
+		// }
+
+		// const getPostByUserName = (username, successFn) => {
+		// 	setTimeout(() => {
+		// 		successFn(["post 1", "post 2", "post 3"]);
+		// 	}, 2000);
+		// }
+
+		// const getPostDetails = (posts, successFn) => {
+		// 	setTimeout(() => {
+		// 		successFn ("Post Details");
+		// 	}, 1000);
+		// }
+
+		// // callback hell
+		// login("muratdanaci", "123", user => {
+		// 	console.log(user.username);
+		// 	console.log(user.email);
+
+		// 	getPostByUserName(user.username, (posts) => {
+		// 		console.log(posts);
+		// 		getPostDetails(posts[0], (details) => {
+		// 			console.log(details);
+		// 		})
+		// 	});
+		// }, (error) => {
+		// 	console.log(error);
+		// });
+
+		// console.log("End");
+
+		/********** Start Promise **********/
+
+		const serverStatus = false;
+
+		const promise = new Promise((resolve, reject) => {
+			if (serverStatus) {
+				setTimeout(() => {
+					resolve( { username: "muratdanaci", email: "info@muratdanaci.com" } );
+				}, 1500);
+			} else {
+				reject("Server is down!");
+			}
+		});
+
+		promise.then((user) => {
+			console.log(user.username);
+			console.log(user.email);
+		}).catch((error) => {
+			console.log(error);
+		});
+
+		
+		/********** End Promise ***********/
+
+		
+		
+	</script>
+</body>
+</html>
